@@ -1,0 +1,38 @@
+body {
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 192, 203, 0.473);
+}
+
+#massive-grid {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    // height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    border: 1px solid #000000f0;
+
+    &.path {
+        background: #7b7bff8a;
+    }
+
+    &.highlight {
+        background: #93ff8980;
+    }
+
+    &.clicked {
+        background: #fab83f80;
+    }
+}
